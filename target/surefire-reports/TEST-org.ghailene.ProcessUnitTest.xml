@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="org.ghailene.ProcessUnitTest" time="0.001" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.2.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Bureau\Nouveau dossier\untitled\camunda-muti-instance-sequecial-user-ask"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Bureau\Nouveau dossier\untitled\camunda-muti-instance-sequecial-user-ask"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="E:\TMP\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;C:\Program Files\PuTTY\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\apache-maven-3.6.1\bin;%JAVA_HOME%;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Ghailene\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\WebStorm 2019.3.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\bin;;C:\Users\Ghailene\AppData\Roaming\npm;C:\Users\Ghailene\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Ghailene"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Ghailene"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_231\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="org.ghailene.ProcessUnitTest" name="testHappyPath" time="0.001">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: org.camunda.bpm.engine.ProcessEngineException: ENGINE-08043 Exception while performing &apos;Deployment of Process Application camunda-muti-instance-sequecial-user-ask&apos; =&gt; &apos;Deployment of process archive &apos;null&apos;: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:105)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:52)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication$$EnhancerBySpringCGLIB$$24dfd1c4.onApplicationEvent(&lt;generated&gt;)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 32 more
+Caused by: org.camunda.bpm.engine.ProcessEngineException: ENGINE-08043 Exception while performing &apos;Deployment of Process Application camunda-muti-instance-sequecial-user-ask&apos; =&gt; &apos;Deployment of process archive &apos;null&apos;: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.container.impl.ContainerIntegrationLogger.exceptionWhilePerformingOperationStep(ContainerIntegrationLogger.java:316)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:136)
+	at org.camunda.bpm.container.impl.jmx.MBeanServiceContainer.executeDeploymentOperation(MBeanServiceContainer.java:160)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation$DeploymentOperationBuilder.execute(DeploymentOperation.java:216)
+	at org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl.deployProcessApplication(RuntimeContainerDelegateImpl.java:102)
+	at org.camunda.bpm.application.AbstractProcessApplication.deploy(AbstractProcessApplication.java:71)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.start(SpringProcessApplication.java:110)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.afterPropertiesSet(SpringProcessApplication.java:119)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication.afterPropertiesSet(SpringBootProcessApplication.java:102)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:96)
+	... 47 more
+Caused by: org.camunda.bpm.engine.ProcessEngineException: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.ensureNoDuplicateDefinitionKeys(AbstractDefinitionDeployer.java:192)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.deploy(AbstractDefinitionDeployer.java:65)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:54)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer.deploy(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.DeploymentCache.deploy(DeploymentCache.java:71)
+	at org.camunda.bpm.engine.impl.persistence.entity.DeploymentManager.insertDeployment(DeploymentManager.java:64)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.deploy(DeployCmd.java:254)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.lambda$doExecute$0(DeployCmd.java:155)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.doExecute(DeployCmd.java:141)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:101)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:81)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.RepositoryServiceImpl.deployWithResult(RepositoryServiceImpl.java:104)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deployWithResult(DeploymentBuilderImpl.java:270)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deploy(DeploymentBuilderImpl.java:266)
+	at org.camunda.bpm.engine.impl.repository.ProcessApplicationDeploymentBuilderImpl.deploy(ProcessApplicationDeploymentBuilderImpl.java:63)
+	at org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep.performOperationStep(DeployProcessArchiveStep.java:146)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:120)
+	... 55 more
+</error>
+    <system-out>21:04:27.169 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ghailene.ProcessUnitTest], using SpringBootContextLoader
+21:04:27.170 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [org.ghailene.ProcessUnitTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:04:27.171 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ghailene.ProcessUnitTest]: ProcessUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:04:27.173 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ghailene.CamundaApplication for test class org.ghailene.ProcessUnitTest
+21:04:27.175 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+21:04:27.176 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@608f310a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a7d914c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@515940af, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f8df69, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ce6a9bd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a47bc9c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5100c143, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@12404f9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@3b42b729, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4c164f81, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1bcb8599, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b671dda, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25b20860, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ba63110, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1c0680b0]
+
+ ____                                 _         ____  _       _    __                      
+/ ___| __ _ _ __ ___  _   _ _ __   __| | __ _  |  _ \| | __ _| |_ / _| ___  _ __ _ __ ___  
+| |   / _` | &apos;_ ` _ \| | | | &apos;_ \ / _` |/ _` | | |_) | |/ _` | __| |_ / _ \| &apos;__| &apos;_ ` _ \ 
+| |__| (_| | | | | | | |_| | | | | (_| | (_| | |  __/| | (_| | |_|  _| (_) | |  | | | | | |
+\____/\__,_|_| |_| |_|\__,_|_| |_|\__,_|\__,_| |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
+
+  Spring-Boot:  (v2.5.4)
+  Camunda Platform: (v7.16.0)
+  Camunda Platform Spring Boot Starter: (v7.16.0)
+
+21:04:27.215 [main] INFO  org.ghailene.ProcessUnitTest - Starting ProcessUnitTest using Java 1.8.0_231 on DESKTOP-NFSBTC7 with PID 3040 (started by Ghailene in E:\Bureau\Nouveau dossier\untitled\camunda-muti-instance-sequecial-user-ask)
+21:04:27.216 [main] DEBUG org.ghailene.ProcessUnitTest - Running with Spring Boot v2.5.4, Spring v5.3.9
+21:04:27.217 [main] INFO  org.ghailene.ProcessUnitTest - No active profile set, falling back to default profiles: default
+21:04:27.626 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@42a57993
+21:04:27.844 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin &apos;CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, ProcessTestCoverageProcessEnginePlugin, disableDeploymentResourcePattern, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, SpringBootSpinProcessEnginePlugin]&apos; activated on process engine &apos;default&apos;
+21:04:27.845 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
+21:04:27.845 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+21:04:27.845 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+21:04:27.845 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+21:04:27.845 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+21:04:27.859 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+21:04:27.880 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+21:04:27.882 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+21:04:27.882 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+21:04:27.897 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+21:04:27.913 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@53b2e1eb, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@29db008c)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@1d008e61, clock: SystemClock, configuration: Configuration(false)]
+21:04:27.930 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-2 - configuration:
+21:04:27.934 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+21:04:27.935 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit................................true
+21:04:27.935 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog................................none
+21:04:27.936 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+21:04:27.941 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+21:04:27.946 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+21:04:27.947 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource................................none
+21:04:27.948 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+21:04:27.948 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+21:04:27.949 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=&lt;masked&gt;}
+21:04:27.949 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................................&quot;org.h2.Driver&quot;
+21:04:27.949 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+21:04:27.949 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+21:04:27.949 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+21:04:27.950 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+21:04:27.951 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+21:04:27.952 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+21:04:27.955 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:h2:mem:camunda-spring-boot-test;DB_CLOSE_ON_EXIT=false
+21:04:27.957 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+21:04:27.959 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+21:04:27.959 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+21:04:27.959 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+21:04:27.960 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+21:04:27.961 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+21:04:27.962 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle................................10
+21:04:27.962 [main] DEBUG com.zaxxer.hikari.HikariConfig - password................................&lt;masked&gt;
+21:04:27.963 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName................................&quot;HikariPool-2&quot;
+21:04:27.964 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly................................false
+21:04:27.964 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+21:04:27.964 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+21:04:27.964 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema................................none
+21:04:27.964 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+21:04:27.964 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+21:04:27.965 [main] DEBUG com.zaxxer.hikari.HikariConfig - username................................&quot;sa&quot;
+21:04:27.965 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+21:04:27.965 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+21:04:27.971 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:27.972 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+21:04:28.073 [HikariPool-2 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Pool stats (total=1, active=0, idle=1, waiting=0)
+21:04:28.082 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn12: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.084 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn13: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.085 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn14: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.086 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn15: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.090 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn16: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.092 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn17: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.094 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn18: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.095 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn19: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.097 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn20: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+21:04:28.097 [HikariPool-2 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - After adding stats (total=10, active=0, idle=10, waiting=0)
+21:04:32.220 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql&apos;
+21:04:32.250 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql&apos;
+21:04:32.264 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;identity&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql&apos;
+21:04:32.297 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql&apos;
+21:04:32.304 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql&apos;
+21:04:32.322 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql&apos;
+21:04:32.353 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql&apos;
+21:04:32.366 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+21:04:32.367 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+21:04:32.509 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+21:04:32.612 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+21:04:32.613 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+21:04:32.655 [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+21:04:32.656 [main] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+21:04:32.656 [main] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+21:04:32.656 [main] DEBUG o.h.v.i.e.AbstractConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+21:04:32.656 [main] DEBUG o.h.v.i.x.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+21:04:32.656 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+21:04:32.657 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+21:04:32.657 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator&apos;s class loader
+21:04:32.658 [main] DEBUG o.h.v.i.x.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+21:04:32.660 [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+21:04:32.664 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+21:04:32.665 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+21:04:32.665 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+21:04:32.665 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+21:04:32.665 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+21:04:32.666 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+21:04:32.710 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+21:04:32.721 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - &apos;viewControllerHandlerMapping&apos; {/=ParameterizableViewController [view=org.springframework.web.servlet.view.RedirectView: [RedirectView]; URL [/camunda/app/]]}
+21:04:32.724 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - &apos;beanNameHandlerMapping&apos; {}
+21:04:32.729 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - &apos;resourceHandlerMapping&apos; {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]], /camunda/lib/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/camunda/lib/]], /camunda/api/**=ResourceHttpRequestHandler [Classpath [api/]], /camunda/app/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/camunda/app/]]}
+21:04:32.788 [main] INFO  org.camunda.bpm.container - ENGINE-08024 Found processes.xml file at file:/E:/Bureau/Nouveau%20dossier/untitled/camunda-muti-instance-sequecial-user-ask/target/classes/META-INF/processes.xml
+21:04:32.788 [main] INFO  org.camunda.bpm.container - ENGINE-08025 Detected empty processes.xml file, using default values
+21:04:32.790 [main] INFO  org.camunda.bpm.container - ENGINE-08023 Deployment summary for process archive &apos;camunda-muti-instance-sequecial-user-ask&apos;: 
+
+        multi-instance-parallel.bpmn
+        multi-instance-sequencial.bpmn
+
+21:04:32.829 [main] ERROR org.camunda.bpm.engine.context - ENGINE-16004 Exception while closing command context: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+org.camunda.bpm.engine.ProcessEngineException: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.ensureNoDuplicateDefinitionKeys(AbstractDefinitionDeployer.java:192)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.deploy(AbstractDefinitionDeployer.java:65)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:54)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer.deploy(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.DeploymentCache.deploy(DeploymentCache.java:71)
+	at org.camunda.bpm.engine.impl.persistence.entity.DeploymentManager.insertDeployment(DeploymentManager.java:64)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.deploy(DeployCmd.java:254)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.lambda$doExecute$0(DeployCmd.java:155)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.doExecute(DeployCmd.java:141)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:101)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:81)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.RepositoryServiceImpl.deployWithResult(RepositoryServiceImpl.java:104)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deployWithResult(DeploymentBuilderImpl.java:270)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deploy(DeploymentBuilderImpl.java:266)
+	at org.camunda.bpm.engine.impl.repository.ProcessApplicationDeploymentBuilderImpl.deploy(ProcessApplicationDeploymentBuilderImpl.java:63)
+	at org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep.performOperationStep(DeployProcessArchiveStep.java:146)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:120)
+	at org.camunda.bpm.container.impl.jmx.MBeanServiceContainer.executeDeploymentOperation(MBeanServiceContainer.java:160)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation$DeploymentOperationBuilder.execute(DeploymentOperation.java:216)
+	at org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl.deployProcessApplication(RuntimeContainerDelegateImpl.java:102)
+	at org.camunda.bpm.application.AbstractProcessApplication.deploy(AbstractProcessApplication.java:71)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.start(SpringProcessApplication.java:110)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.afterPropertiesSet(SpringProcessApplication.java:119)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication.afterPropertiesSet(SpringBootProcessApplication.java:102)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:96)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:52)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication$$EnhancerBySpringCGLIB$$24dfd1c4.onApplicationEvent(&lt;generated&gt;)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+21:04:32.831 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with &apos;debug&apos; enabled.
+21:04:32.833 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.RuntimeException: org.camunda.bpm.engine.ProcessEngineException: ENGINE-08043 Exception while performing &apos;Deployment of Process Application camunda-muti-instance-sequecial-user-ask&apos; =&gt; &apos;Deployment of process archive &apos;null&apos;: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:105)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:52)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication$$EnhancerBySpringCGLIB$$24dfd1c4.onApplicationEvent(&lt;generated&gt;)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.camunda.bpm.engine.ProcessEngineException: ENGINE-08043 Exception while performing &apos;Deployment of Process Application camunda-muti-instance-sequecial-user-ask&apos; =&gt; &apos;Deployment of process archive &apos;null&apos;: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.container.impl.ContainerIntegrationLogger.exceptionWhilePerformingOperationStep(ContainerIntegrationLogger.java:316)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:136)
+	at org.camunda.bpm.container.impl.jmx.MBeanServiceContainer.executeDeploymentOperation(MBeanServiceContainer.java:160)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation$DeploymentOperationBuilder.execute(DeploymentOperation.java:216)
+	at org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl.deployProcessApplication(RuntimeContainerDelegateImpl.java:102)
+	at org.camunda.bpm.application.AbstractProcessApplication.deploy(AbstractProcessApplication.java:71)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.start(SpringProcessApplication.java:110)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.afterPropertiesSet(SpringProcessApplication.java:119)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication.afterPropertiesSet(SpringBootProcessApplication.java:102)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:96)
+	... 47 common frames omitted
+Caused by: org.camunda.bpm.engine.ProcessEngineException: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.ensureNoDuplicateDefinitionKeys(AbstractDefinitionDeployer.java:192)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.deploy(AbstractDefinitionDeployer.java:65)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:54)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer.deploy(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.DeploymentCache.deploy(DeploymentCache.java:71)
+	at org.camunda.bpm.engine.impl.persistence.entity.DeploymentManager.insertDeployment(DeploymentManager.java:64)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.deploy(DeployCmd.java:254)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.lambda$doExecute$0(DeployCmd.java:155)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.doExecute(DeployCmd.java:141)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:101)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:81)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.RepositoryServiceImpl.deployWithResult(RepositoryServiceImpl.java:104)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deployWithResult(DeploymentBuilderImpl.java:270)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deploy(DeploymentBuilderImpl.java:266)
+	at org.camunda.bpm.engine.impl.repository.ProcessApplicationDeploymentBuilderImpl.deploy(ProcessApplicationDeploymentBuilderImpl.java:63)
+	at org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep.performOperationStep(DeployProcessArchiveStep.java:146)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:120)
+	... 55 common frames omitted
+21:04:32.834 [main] WARN  org.camunda.bpm.application - ENGINE-07017 Calling undeploy() on process application that is not deployed.
+21:04:32.842 [main] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+21:04:32.842 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+21:04:32.843 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+21:04:32.843 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn11: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.844 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn12: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.844 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn13: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.844 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn14: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.845 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn15: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.845 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn16: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.845 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn17: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.845 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn18: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.845 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn19: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.846 [HikariPool-2 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Closing connection conn20: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+21:04:32.846 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+21:04:32.847 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+21:04:32.848 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@608f310a] to prepare test instance [org.ghailene.ProcessUnitTest@59cde35]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: org.camunda.bpm.engine.ProcessEngineException: ENGINE-08043 Exception while performing &apos;Deployment of Process Application camunda-muti-instance-sequecial-user-ask&apos; =&gt; &apos;Deployment of process archive &apos;null&apos;: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:105)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:52)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication$$EnhancerBySpringCGLIB$$24dfd1c4.onApplicationEvent(&lt;generated&gt;)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 32 common frames omitted
+Caused by: org.camunda.bpm.engine.ProcessEngineException: ENGINE-08043 Exception while performing &apos;Deployment of Process Application camunda-muti-instance-sequecial-user-ask&apos; =&gt; &apos;Deployment of process archive &apos;null&apos;: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.container.impl.ContainerIntegrationLogger.exceptionWhilePerformingOperationStep(ContainerIntegrationLogger.java:316)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:136)
+	at org.camunda.bpm.container.impl.jmx.MBeanServiceContainer.executeDeploymentOperation(MBeanServiceContainer.java:160)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation$DeploymentOperationBuilder.execute(DeploymentOperation.java:216)
+	at org.camunda.bpm.container.impl.RuntimeContainerDelegateImpl.deployProcessApplication(RuntimeContainerDelegateImpl.java:102)
+	at org.camunda.bpm.application.AbstractProcessApplication.deploy(AbstractProcessApplication.java:71)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.start(SpringProcessApplication.java:110)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.afterPropertiesSet(SpringProcessApplication.java:119)
+	at org.camunda.bpm.spring.boot.starter.SpringBootProcessApplication.afterPropertiesSet(SpringBootProcessApplication.java:102)
+	at org.camunda.bpm.engine.spring.application.SpringProcessApplication.onApplicationEvent(SpringProcessApplication.java:96)
+	... 47 common frames omitted
+Caused by: org.camunda.bpm.engine.ProcessEngineException: The deployment contains definitions with the same key &apos;camunda-muti-instance-sequecial-user-ask&apos; (id attribute), this is not allowed
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.ensureNoDuplicateDefinitionKeys(AbstractDefinitionDeployer.java:192)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.deploy(AbstractDefinitionDeployer.java:65)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:54)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer.deploy(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.DeploymentCache.deploy(DeploymentCache.java:71)
+	at org.camunda.bpm.engine.impl.persistence.entity.DeploymentManager.insertDeployment(DeploymentManager.java:64)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.deploy(DeployCmd.java:254)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.lambda$doExecute$0(DeployCmd.java:155)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:559)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:547)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.doExecute(DeployCmd.java:141)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:101)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:81)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.RepositoryServiceImpl.deployWithResult(RepositoryServiceImpl.java:104)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deployWithResult(DeploymentBuilderImpl.java:270)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deploy(DeploymentBuilderImpl.java:266)
+	at org.camunda.bpm.engine.impl.repository.ProcessApplicationDeploymentBuilderImpl.deploy(ProcessApplicationDeploymentBuilderImpl.java:63)
+	at org.camunda.bpm.container.impl.deployment.DeployProcessArchiveStep.performOperationStep(DeployProcessArchiveStep.java:146)
+	at org.camunda.bpm.container.impl.spi.DeploymentOperation.execute(DeploymentOperation.java:120)
+	... 55 common frames omitted
+</system-out>
+  </testcase>
+</testsuite>
